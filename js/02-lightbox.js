@@ -14,14 +14,10 @@ const createElementsGallery = galleryItems
 
 gallery.innerHTML = createElementsGallery;
 
-gallery.addEventListener('click', event => {
-  event.preventDefault();
-
-  const lightbox = new SimpleLightbox('.gallery a', {
-    captions: true,
-    captionDelay: 250,
-    captionPosition: 'bottom',
-    captionsData: 'alt',
-  });
+const lightbox = new SimpleLightbox('.gallery a', {
+  captions: true,
+  captionDelay: 250,
+  captionPosition: 'bottom',
+  captionsData: 'alt',
 });
 console.log(galleryItems);
